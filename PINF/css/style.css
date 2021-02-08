@@ -1,0 +1,694 @@
+
+/************ TABLE OF CONTENTS ***************
+
+1. logo
+2. header
+3. Main Slider
+4. container
+5. cards
+6.  QUI SOMMES NOUS
+7. plat sur commande
+8. Horaires
+9. Options de paiement
+
+**********************************************/
+
+/*****************************LOGO******************************/
+
+.logo{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.logofooter{
+  max-width: 150px;
+  max-height: 150px;
+}
+
+/*****************************header******************************/
+
+#btnEspaceClient{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    color: #cc9900;
+}
+
+.lienacc{  
+  color: #cc9900;
+}
+.navbar{
+    background-color: #24262b;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #cc9900;
+}
+
+/*****************************Accueil******************************/
+
+/*****************************SLIDER******************************/
+
+#carouselExampleIndicators{
+  border: 1px solid black;
+    width: 800px;
+    margin-left: auto;
+      margin-right: auto;
+      height: 300px;
+  }
+  .d-block{
+    height: 300px;
+    width: 700px;
+  }
+  @media screen and (max-width:1020px) { 
+    #carouselExampleIndicators{
+      float:none;
+      clear:both;
+      width:100%;
+    }
+  }
+
+/*****************************CONTAINER******************************/
+
+  .containerAccueil {
+    width: 70%;
+    margin: 50px auto;
+  }
+  .headingAccueil  {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-family: Agilia;
+  }
+
+/*****************************CARDS******************************/
+
+.rowAccueil  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-bottom: 15px;
+  }
+  
+
+.ca1{
+  background: url("../ressources/pain1.jpg");
+}
+
+.ca2{
+  background: url("../ressources/offre.jpg");
+}
+
+.ca3{
+  background: url("../ressources/qui.jpg");
+}
+
+.ca4{
+  background: url("../ressources/pa1.jpg");
+}
+
+.ca5{
+  background: url("../ressources/po.jpg");
+}
+
+.ca6{
+  background: url("../ressources/pain.jpg");
+}
+
+.ca7{
+  background: url("../ressources/s.jpg");
+}
+
+.ca8{
+  background: url("../ressources/vien.jpg");
+}
+
+.cardAccueil  {
+  width: 20%;
+  height: 300px;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+  .card-headerAccueil  .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    margin-top: 60px;
+    text-decoration: none;
+    padding: 10px 5px;
+  }
+  
+  .card-headerAccueil  .btn2 {
+    display: block;
+    color: #cc9900;
+    text-align: center;
+    background: linear-gradient(to right, #24262b, #24262b);
+    margin-top: 60px;
+    text-decoration: none;
+    padding: 10px 5px;
+  }
+  .cardAccueil:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .cardAccueil  {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .containerAccueil  {
+      width: 100%;
+    }
+  
+    .headingAccueil  {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .cardAccueil  {
+      width: 80%;
+    }
+  }
+
+/*****************************QUI SOMMES NOUS******************************/
+
+.titleQSN{
+  color: rgb(30, 31, 39);
+  font-family: Agilia;
+  font-weight: 1000;   
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+.qsn{
+  
+  background-image: url("https://img.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg?size=626&ext=jpg");
+  width: 100%;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  
+}
+
+.qsn-image{
+width:500px;
+height:333px;
+float: left;
+margin-right: 90px;
+margin-left: 200px;
+vertical-align: center;
+border: 1px solid #cc9900;
+}
+
+.qsn-desc, .qsn-image{
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+.qsn-desc{
+margin-right: 100px;
+}
+
+@font-face {
+font-family: 'agilia' ;
+src: url('Agilia.otf');
+}
+
+@media screen and (max-width: 1416px){
+.qsn-image{
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.qsn-desc{
+  margin-right: 10px;
+}
+
+}
+
+@media screen and (max-width: 1025px){
+.qsn{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.qsn-image{
+  width: 450px ;
+  height: 300px;
+}
+
+}
+
+@media screen and (max-width: 1100px) {
+.qsn-desc{
+  width: 700px;
+}
+}
+
+@media screen and (max-width: 900px) {
+.qsn-desc{
+  width: 400px;
+}
+}
+
+@media screen and (max-width: 550px) {
+.qsn-desc{
+  width: 300px;
+}
+
+.qsn-image{
+  width: 350px ;
+  height: 233px;
+}
+}
+
+@media screen and (max-width: 420px) {
+  .qsn-desc{
+    width: 300px;
+  }
+  
+  .qsn-image{
+    width: 300px ;
+    height: 233px;
+  }
+  }
+
+/*****************************PLAT SUR COMMANDE******************************/
+
+    #PlatSurCommande{
+      border: 1px solid #cc9900;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      width: 1000px;
+      text-align: center;
+      margin-bottom: 15px;
+      color: #24262b;
+    }
+  
+    #PlatSurCommande h4{
+      color: #cc9900;
+      font-family: Agilia;
+    }
+    @media screen and (max-width: 1100px) {
+      #PlatSurCommande{
+        width: 700px;
+      }
+    }
+  
+    @media screen and (max-width: 980px) {
+      #PlatSurCommande{
+        width: 600px;
+      }
+    }
+  
+    @media screen and (max-width: 780px) {
+      #PlatSurCommande{
+        width: 500px;
+      }
+    }
+  
+    @media screen and (max-width: 550px) {
+      #PlatSurCommande{
+        width: 300px;
+      }
+    }
+
+/*****************************HORAIRES******************************/
+
+  .image{
+    position: relative;
+    float: right;
+    margin-top: 0px;
+    width:400px;
+    height:350px;
+  }
+  
+  
+  .blocHoraires{
+      background-color: #cc9900;
+      border: solid 1px #cc9900 ;
+      height: 350px;
+      width: 400px;
+      
+  }
+  
+  
+  .contenuHoraire{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  
+  @media screen and (max-width: 1120px){
+    .contenuHoraire{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+  
+    .image{
+      width: 370px;
+    }
+    .blocHoraires{
+      width: 370px;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .image{
+      width: 349px;
+    }
+    .blocHoraires{
+      width: 349px;
+    }
+    .list_heures{
+      width: 190px;
+    }
+    .list_jours{
+      width: 80px;
+    }
+
+  }
+  .heures, .horaires, .titre{
+      display: inline;
+  }
+  
+  .titreHoraire{
+    color: black;
+      text-align: center;
+      font-family: Agilia;
+      font-size: 40px;
+      font-weight: normal;   
+      display: flex;
+      justify-content: center;
+  }
+  
+  .horaires{
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+  
+  
+  .jours, .heures{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+  
+  }
+  
+  .list_heures, .list_jours{
+      list-style-type: none;
+      letter-spacing: 3px;
+      line-height: 25px;
+  }
+  
+/*****************************OPTIONS DE PAYMENT******************************/
+
+#pay-icon{
+  width: 50px;
+  height: 50px;
+  
+  }
+  
+  .Labelpay{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  }
+  
+  .pay-title{
+  color: rgb(30, 31, 39);
+  font-family: agilia;
+  font-weight: bold;   
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  }
+  
+  .fig{
+  text-align: center;
+  }
+  
+  
+  @media screen and (max-width: 500px) {
+  .Labelpay{
+    display: flex;
+    flex-direction: column;}
+  
+    .pay-title{
+      text-align: center;
+    }
+  
+  }
+  
+/*****************************CATEGORIE PRODUITS******************************/
+
+
+  #titreProduits{
+    font-family: Agilia;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid #cc9900;
+    background-color: #cc9900;
+  }
+
+  .rowProduits{
+    margin-bottom: 0;
+  }
+  
+/*****************************PRODUITS******************************/
+  
+  /*products*/
+  #products{
+    padding: 0px 0px;
+  }
+
+  #products .container{
+    margin-top: 30px;
+  }
+
+  #imageP{
+    background: url("../ressources/pa1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Agilia;
+  }
+
+  #imageP .fw-normal {
+      color: white;
+  }
+  #products h1{
+    font-weight: 900;
+    font-size: 34px;
+    padding-bottom: 5px;
+  }
+
+  #products .title{
+    text-align: center;
+    padding: 25px 0px;
+  }
+
+  #products .title p{
+      font-size: 18px;
+  }
+
+  #products .card-body{
+    height: 100px;
+    color: #24262b; 
+  }
+
+  #products .card{
+    margin: 20px 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    height: 350px;
+    width: 80%;
+    transition: 0.3s;
+  }
+  #products .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+
+  #products img{
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 30px;
+  }
+  #products .card-body a {
+    color: #24262b;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: auto;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+
+  .cover {
+    height: 360px;
+    margin-left: 0px;
+}
+
+.cover {
+  height: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-left: calc(((100% - 1640px) / 2) + 140px);
+}
+
+/*description chaque produit*/
+
+.description{
+  margin-bottom: 30px;
+}
+.imgDes{
+  height: 300px;
+  width: 300px;
+  border-radius: 1em;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.description h4{
+  font-family: Agilia;
+  color: #cc9900;
+}
+.description .desProduit{
+  margin-top: 20px;
+}
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+
+/*****************************FOOTER******************************/
+
+.cfooter{
+    max-width: 1800px;
+    margin:auto;
+  }
+  .rfooter{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+      padding: 40px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #cc9900;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+
+  footer-bottom{
+    color: #ffffff;    
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+  text-align: center;
+  color: #ffffff;   
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 620px){
+    .footer-col{
+      width: 100%;
+  }
+  }
